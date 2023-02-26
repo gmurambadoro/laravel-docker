@@ -9,7 +9,7 @@ services:
     depends_on:
       - db
     ports:
-      - "8070:80"
+      - "80"
     networks:
       - app
     volumes:
@@ -33,7 +33,7 @@ services:
     image: adminer
     restart: unless-stopped
     ports:
-      - "8071:8080"
+      - "8080"
     depends_on:
       - db
     networks:
