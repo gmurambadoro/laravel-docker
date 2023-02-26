@@ -23,7 +23,7 @@ services:
       - --default-authentication-plugin=mysql_native_password
     environment:
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=app
+      - MYSQL_DATABASE=app_db
     volumes:
       - mysql:/var/lib/mysql
     networks:
